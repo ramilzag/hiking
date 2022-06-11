@@ -1,0 +1,42 @@
+@import "./normalize.css";
+
+:root {
+  --color-primary: #e2a355;
+  --color-secondary: #7f7770;
+  --color-body: #54524f;
+  --color-text-alternative: #fff;
+}
+
+/* Typhography */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", "Times New Roman", Times, serif;
+  font-size: 2.7rem;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-primary);
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-size: 9rem;
+}
+
+h2 {
+  font-size: 6.2rem;
+}
+
+h3 {
+  font-size: 5.3rem;
+}
+
+p {
+  margin-top: 0;
+}
