@@ -5,6 +5,7 @@
   --color-secondary: #7f7770;
   --color-body: #54524f;
   --color-text-alternative: #fff;
+  --color-border: #ccc;
 }
 
 /* Typhography */
@@ -105,4 +106,15 @@ p {
 .list {
   list-style: none;
   padding-left: 0;
+}
+
+/* Input */
+
+.input {
+  border-radius: 30px;
+  border: 1px solid var(--color-border);
+  color: #8b8a88;
+  font-size: 2.5rem;
+  padding: 1rem 2.5rem;
+  outline: 0;
 }
