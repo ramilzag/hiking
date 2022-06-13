@@ -14,15 +14,28 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="input-group">
-      <input type="text" class="input" placeholder="Your email" />
-      <button class="btn btn--accent">Subscribe</button>
-    </div>
-    <div class="input-group input-group--darker">
-      <input type="text" class="input input--smaller input--darker" />
-      <svg class="icon">
-        <use xlink:href="../images/sprite.svg#search"></use>
-      </svg>
+    <div class="card">
+      <header class="card__header">
+        <picture>
+          <source
+            type="image/jpg"
+            srcset="
+              images/adilet-asilbekov-IqeP6kH3T7k-unsplash_medium.jpg    1x,
+              images/adilet-asilbekov-IqeP6kH3T7k-unsplash_medium@2x.jpg 2x,
+              images/adilet-asilbekov-IqeP6kH3T7k-unsplash_medium@3x.jpg 3x
+            "
+          />
+          <img
+            class="card__image"
+            src="./images/adilet-asilbekov-IqeP6kH3T7k-unsplash_medium.jpg"
+            alt="hiker's image standing on mountain"
+          />
+        </picture>
+      </header>
+      <div class="card__body">
+        <h3 class="card__heading">Lorem, ipsum.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing...</p>
+      </div>
     </div>
   </body>
 </html>
