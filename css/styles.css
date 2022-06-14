@@ -30,7 +30,6 @@ body {
 h1,
 h2,
 h3 {
-  color: var(--color-primary);
   margin-bottom: 2rem;
 }
 
@@ -39,7 +38,7 @@ h1 {
 }
 
 h2 {
-  font-size: 5.2rem;
+  font-size: 5rem;
 }
 
 h3 {
@@ -315,4 +314,34 @@ p {
 .collapsible--expanded .collapsible__content {
   max-height: 100vh;
   opacity: 1;
+}
+
+/* Promotions */
+
+.promotion {
+  padding: 7rem 4rem;
+}
+
+.promotion--primary {
+  background: #deb37e;
+  color: var(--color-text-alternative);
+}
+
+.promotion--secondary {
+  background: #7f7770;
+  color: var(--color-text-alternative);
+}
+
+@media screen and (min-width: 600px) {
+  .promotion__heading {
+    font-size: 4rem;
+  }
+
+  .promotion__description {
+    font-size: 2.2rem;
+  }
+
+  .promotion .btn {
+    font-size: 2rem;
+  }
 }
