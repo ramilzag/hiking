@@ -199,6 +199,7 @@ p {
 }
 
 .card__heading {
+  margin-top: 0;
   color: var(--color-text-alternative);
 }
 
@@ -210,4 +211,37 @@ p {
   .card__body {
     font-size: 1.8rem;
   }
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* Blocks */
+
+.block {
+  padding: 5rem 2rem;
+}
+
+.block__heading {
+  margin-top: 0;
+}
+
+.block--primary {
+  background: var(--color-primary);
+  color: var(--color-text-alternative);
+}
+
+.block--primary .block__heading {
+  color: var(--color-text-alternative);
+}
+
+.block--secondary {
+  background: var(--color-secondary);
+  color: var(--color-text-alternative);
+}
+
+.block--secondary .block__heading {
+  color: var(--color-text-alternative);
 }
