@@ -16,6 +16,10 @@
   box-sizing: border-box;
 }
 
+::selection {
+  color: dodgerblue;
+}
+
 /* Typhography */
 
 html {
@@ -47,6 +51,10 @@ h3 {
 
 p {
   margin-top: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -374,7 +382,8 @@ p {
   transform: rotate(180deg);
 }
 
-.collapsible--expanded .collapsible__content {
+.collapsible--expanded .collapsible__content,
+.collapsible--expanded + .collapsible__content {
   max-height: 100vh;
   opacity: 1;
 }
@@ -448,5 +457,104 @@ p {
   .quote::before {
     font-size: 6rem;
     height: 6rem;
+  }
+}
+
+/* Navigation bar */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
+  flex-wrap: wrap;
+}
+
+.nav__list {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 100%;
+  margin: 0;
+  transition: none;
+}
+
+.nav__logo {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav__logo svg {
+  width: 10rem;
+  height: 6rem;
+  fill: var(--color-secondary);
+}
+
+.nav__menu-icon {
+  display: flex;
+  padding: 0;
+  fill: var(--color-secondary);
+  cursor: pointer;
+}
+
+.nav__input-group {
+  width: 16rem;
+  cursor: pointer;
+}
+
+.nav__input-group .input {
+  font-weight: bold;
+}
+
+.nav__item {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--color-secondary);
+}
+
+.nav__item > a {
+  color: var(--color-secondary);
+}
+
+.nav__item > a:hover {
+  color: var(--color-primary);
+  transition: color 0.3s;
+}
+
+.nav__toggler {
+  opacity: 0.8;
+  transition: box-shadow 0.15s;
+  cursor: pointer;
+}
+
+.nav .collapsible--expanded.nav__toggler {
+  box-shadow: 0 0 3px 0.2px #666;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__toggler {
+    display: none;
+  }
+
+  .nav__logo {
+    flex-grow: 1;
+  }
+
+  .nav__list {
+    width: auto;
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+    max-height: 100%;
+    opacity: 1;
+  }
+
+  .nav__item {
+    border-bottom: 0;
+    padding-right: 3rem;
+  }
+
+  .nav__input-group {
+    order: 1;
   }
 }
