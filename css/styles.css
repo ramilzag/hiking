@@ -7,6 +7,7 @@
   --color-body: #54524f;
   --color-text-alternative: #fff;
   --color-border: #ccc;
+  --text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   --border-radius: 40px;
 }
 
@@ -29,6 +30,7 @@ html {
 body {
   font-family: "Open Sans", "Times New Roman", Times, serif;
   font-size: 2.5rem;
+  padding: 0 0.5rem;
 }
 
 h1,
@@ -58,7 +60,7 @@ a {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -171,6 +173,7 @@ a {
 .btn--outline {
   background: #fefefd;
   color: var(--color-secondary);
+  box-shadow: 0 0 3px #d9d7d4;
   font-weight: 800;
 }
 
@@ -324,7 +327,7 @@ a {
 /* Blocks */
 
 .block {
-  padding: 5rem 2rem;
+  padding: 5rem 4rem;
 }
 
 .block__heading {
@@ -498,7 +501,7 @@ a {
 }
 
 .nav__input-group {
-  width: 16rem;
+  width: 14rem;
   cursor: pointer;
 }
 
@@ -575,4 +578,55 @@ a {
   .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+/* Hero block */
+
+.hero {
+  background: #faf8f3;
+  display: flex;
+  justify-content: flex-start;
+  background-image: linear-gradient(
+      rgba(250, 248, 243, 0.2),
+      rgba(250, 248, 243, 0.2)
+    ),
+    url("../images/stephen-leonardi-6E6oMx-69Ns-unsplash@3x.jpg");
+  background-repeat: no-repeat;
+  height: 900px;
+  /* height: 100vh; */
+  background-position: center;
+  background-size: cover;
+}
+
+.hero__content {
+  width: 60%;
+}
+
+.hero__heading--primary {
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  text-shadow: var(--text-shadow);
+  margin-bottom: 1rem;
+}
+
+.hero__heading--secondary {
+  font-size: 2rem;
+  margin-top: 0;
+  font-style: italic;
+  text-transform: uppercase;
+  text-shadow: var(--text-shadow);
+  letter-spacing: 3px;
+}
+
+.hero__description {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-shadow: var(--text-shadow);
+  font-style: italic;
+}
+
+.block.hero__content {
+  padding-top: 10%;
+  transform: translateY(12%);
 }
