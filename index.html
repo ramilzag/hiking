@@ -8,34 +8,95 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap"
       rel="stylesheet"
     />
     <title>Document</title>
   </head>
   <body>
-    <section class="container hero ripped">
-      <div class="block hero__content">
-        <h1 class="block__heading hero__heading--primary">
-          It's time for Hiking
-        </h1>
-        <h3 class="hero__heading--secondary">Loremipsum dolor</h3>
-        <button class="btn btn--outline btn--small">Read More</button>
-        <p class="hero__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-          rerum impedit repellat natus accusamus, officia ut.
+    <section class="container block branch-left action">
+      <header class="action__header">
+        <h2 class="action__heading">Let's Go</h2>
+        <p class="action__description">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam eum
+          soluta impedit autem architecto!
         </p>
+      </header>
+      <div class="grid grid--1x3 action__content">
+        <div class="card">
+          <header class="card__header">
+            <picture>
+              <source
+                type="image/jpg"
+                srcset="
+                  images/adilet-asilbekov-IqeP6kH3T7k-unsplash_medium.jpg    1x,
+                  images/adilet-asilbekov-IqeP6kH3T7k-unsplash_medium@2x.jpg 2x,
+                  images/adilet-asilbekov-IqeP6kH3T7k-unsplash_medium@3x.jpg 3x
+                "
+              />
+              <img
+                class="card__image"
+                src="./images/adilet-asilbekov-IqeP6kH3T7k-unsplash_medium.jpg"
+                alt="hiker's image standing on mountain"
+              />
+            </picture>
+          </header>
+          <div class="card__body">
+            <h3 class="card__heading">Lorem, ipsum.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing...</p>
+          </div>
+        </div>
+        <div class="card">
+          <header class="card__header">
+            <picture>
+              <source
+                type="image/jpg"
+                srcset="
+                  images/adilet-asilbekov-V-RShIMKAGQ-unsplash_medium.jpg    1x,
+                  images/adilet-asilbekov-V-RShIMKAGQ-unsplash_medium@2x.jpg 2x,
+                  images/adilet-asilbekov-V-RShIMKAGQ-unsplash_medium@3x.jpg 3x
+                "
+              />
+              <img
+                class="card__image"
+                src="./images/adilet-asilbekov-V-RShIMKAGQ-unsplash_medium.jpg"
+                alt="hiker's image standing on mountain"
+              />
+            </picture>
+          </header>
+          <div class="card__body">
+            <h3 class="card__heading">Lorem, ipsum.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing...</p>
+          </div>
+        </div>
+        <div class="card">
+          <header class="card__header">
+            <picture>
+              <source
+                type="image/jpg"
+                srcset="
+                  images/adilet-asilbekov-Yl5h4EwekQk-unsplash.jpg    1x,
+                  images/adilet-asilbekov-Yl5h4EwekQk-unsplash@2x.jpg 2x,
+                  images/adilet-asilbekov-Yl5h4EwekQk-unsplash@3x.jpg 3x
+                "
+              />
+              <img
+                class="card__image"
+                src="./images/adilet-asilbekov-Yl5h4EwekQk-unsplash.jpg"
+                alt="hiker's image standing on mountain"
+              />
+            </picture>
+          </header>
+          <div class="card__body">
+            <h3 class="card__heading">Lorem, ipsum.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing...</p>
+          </div>
+        </div>
       </div>
-      <img
-        class="ripped-image--top"
-        src="./images/ripped-min.png"
-        alt="Image by rawpixel.com"
-      />
-      <img
-        class="ripped-image--bottom"
-        src="./images/ripped-min.png"
-        alt="Image by rawpixel.com"
-      />
+      <button class="btn btn--secondary action__button">Show More</button>
+      <svg class="branch-left--large">
+        <use xlink:href="/images/sprite.svg#branch"></use>
+      </svg>
     </section>
     <script src="./js/collapsible.js"></script>
   </body>
