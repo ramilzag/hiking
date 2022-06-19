@@ -14,27 +14,31 @@
     <title>Document</title>
   </head>
   <body>
-    <section class=" hero ripped">
-      <div class="block hero__content">
-        <h1 class="block__heading hero__heading--primary">It's time for Hiking</h1>
-        <h3 class="hero__heading--secondary">Loremipsum dolor</h3>
-        <button class="btn btn--outline btn--small">Read More</button>
-        <p class="hero__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis rerum
-          impedit repellat natus accusamus, officia ut.
-        </p>
+    <nav class="nav">
+      <div class="nav__logo-container">
+        <a href="/"
+          ><img class="nav__logo" src="./images/logo.png" alt="logo">
+        </a>
       </div>
-      <img
-        class="ripped-image--top"
-        src="./images/ripped_top.png"
-        alt="Image by rawpixel.com"
-      />
-      <img
-        class="ripped-image--bottom"
-        src="./images/ripped_bottom.png"
-        alt="Image by rawpixel.com"
-      />
-    </section>
+      <div class="nav__input-group input-group input-group--darker">
+        <input type="text" class="input input--smaller input--darker" />
+        <svg class="icon icon--small icon--secondary">
+          <use xlink:href="../images/sprite.svg#search"></use>
+        </svg>
+      </div>
+      <div class="nav__menu-icon nav__toggler collapsible">
+        <svg class="icon">
+          <use xlink:href="../images/sprite.svg#menu"></use>
+        </svg>
+      </div>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="#">Home</a></li>
+        <li class="nav__item"><a href="#">Menu</a></li>
+        <li class="nav__item"><a href="#">Our Story</a></li>
+        <li class="nav__item"><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+    
     </div>
     <script src="./js/collapsible.js"></script>
   </body>
