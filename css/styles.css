@@ -457,6 +457,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   font-weight: bold;
   font-size: 2rem;
 }
@@ -924,4 +925,32 @@ a {
   .callout__heading {
     font-size: 4vmax;
   }
+}
+
+/* Testimonial block */
+
+.testimonial__content {
+  padding: 0 1rem;
+}
+
+.testimonial__content .grid {
+  margin-bottom: 10rem;
+}
+
+.testimonial__card {
+  padding: 0 0.5rem;
+}
+
+.testimonial__heading {
+  color: var(--color-primary);
+  font-size: 3.1rem;
+}
+
+.testimonial__description {
+  color: var(--color-secondary);
+  font-size: 1.7rem;
+}
+
+.testimonial .branch-right {
+  z-index: 1;
 }
