@@ -92,12 +92,12 @@ a {
 
 /* Ripped container */
 
-.ripped {
+.shape {
   position: relative;
   overflow: hidden;
 }
 
-.ripped .ripped-image--top {
+.shape .shape-hero--top {
   transform: translateY(10%);
   height: 30%;
   width: 100%;
@@ -105,11 +105,27 @@ a {
   top: -24%;
 }
 
-.ripped .ripped-image--bottom {
+.shape .shape-hero--bottom {
   width: 100%;
   position: absolute;
   transform: translateY(-10%);
   height: 30%;
+  bottom: -23%;
+}
+
+.shape .shape-feature--top {
+  transform: translateY(10%);
+  height: 30%;
+  width: 100%;
+  position: absolute;
+  top: -24%;
+}
+
+.shape .shape-feature--bottom {
+  width: 100%;
+  position: absolute;
+  transform: translateY(30%);
+  height: 50%;
   bottom: -23%;
 }
 
@@ -811,17 +827,20 @@ a {
 .feature__heading {
   color: var(--color-text-alternative);
   text-shadow: var(--text-shadow);
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 400;
 }
 
 .feature__description {
   color: var(--color-text-alternative);
   text-shadow: var(--text-shadow);
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-weight: 400;
-  line-height: 2.7rem;
-  opacity: 0.9;
+  opacity: 0.7;
+}
+
+.feature .branch-left {
+  bottom: 2rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -837,6 +856,10 @@ a {
 
   .feature__heading {
     font-size: 6rem;
+  }
+
+  .feature__description {
+    font-size: 2.1rem;
   }
 }
 
