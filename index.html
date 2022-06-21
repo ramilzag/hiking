@@ -14,29 +14,87 @@
     <title>Document</title>
   </head>
   <body>
-    <section class="shape subscribe">
-      <div class="container subscribe__content">
-        <h2 class="subscribe__heading">Title Here</h2>
-        <p class="subscribe__description">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit
-          numquam tempora perspiciatis possimus! Doloribus, ipsum!
-        </p>
-        <div class="input-group">
-          <input type="text" class="input" placeholder="Your email" />
-          <button class="btn btn--accent">Subscribe</button>
+    <footer class="footer">
+      <div class="container grid footer__sections">
+        <section class="collapsible collapsible--expanded footer__section">
+          <header class="collapsible__header">
+            <h3 class="collapsible__heading">About</h3>
+            <div class="icon-container icon-container--secondary">
+              <svg class="icon icon--small collapsible__chevron">
+                <use xlink:href="../images/sprite.svg#chevron"></use>
+              </svg>
+            </div>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#"> History</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Brand Guidelines</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <header class="collapsible__header">
+            <h3 class="collapsible__heading">Services</h3>
+            <div class="icon-container icon-container--secondary">
+              <svg class="icon icon--small collapsible__chevron">
+                <use xlink:href="../images/sprite.svg#chevron"></use>
+              </svg>
+            </div>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">How to Order</a></li>
+              <li><a href="#">Our Products</a></li>
+              <li><a href="#">Order Status</a></li>
+              <li><a href="#">Promo</a></li>
+              <li><a href="#">Payment Methods</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <header class="collapsible__header">
+            <h3 class="collapsible__heading">Other</h3>
+            <div class="icon-container icon-container--secondary">
+              <svg class="icon icon--small collapsible__chevron">
+                <use xlink:href="../images/sprite.svg#chevron"></use>
+              </svg>
+            </div>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Privacy</a></li>
+            </ul>
+          </div>
+        </section>
+        <div class="footer__brand">
+          <h3 class="footer__brand-title">Title Here</h3>
+          <p class="footer__brand-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
+            esse explicabo, cumque laudantium in doloremque aut quae distinctio
+            veniam ex porro atque voluptas aliquid rem.
+          </p>
+          <div class="footer__media">
+            <a class="footer__media-item" href="#">
+              <img class="bg-instagram" src="#" alt="" />
+            </a>
+            <a class="footer__media-item" href="#">
+              <img class="bg-facebook" src="#" alt="" />
+            </a>
+            <a class="footer__media-item" href="#">
+              <img class="bg-twitter" src="#" alt="" />
+            </a>
+            <a class="footer__media-item" href="#">
+              <img class="bg-whatsapp" src="#" alt="" />
+            </a>
+          </div>
         </div>
       </div>
-      <img
-        class="shape-feature--top"
-        src="./images/shapeFeature_top.png"
-        alt="Image by rawpixel.com"
-      />
-      <img
-        class="shape-subscribe--bottom"
-        src="./images/shapeSubscribe_bottom.png"
-        alt="Image by rawpixel.com"
-      />
-    </section>
+    </footer>
     <script src="./js/collapsible.js"></script>
   </body>
 </html>
