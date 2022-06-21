@@ -146,6 +146,14 @@ a {
   bottom: -23%;
 }
 
+.shape .shape-subscribe--bottom {
+  width: 100%;
+  position: absolute;
+  transform: translateY(20%);
+  height: 40%;
+  bottom: -23%;
+}
+
 /* Buttons */
 
 .btn {
@@ -238,10 +246,8 @@ a {
 
 .input-group {
   display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: var(--border-radius);
-  box-shadow: 0 0 5px var(--color-border);
+  background: #fff;
 }
 
 .input-group--darker {
@@ -255,7 +261,7 @@ a {
 }
 
 .input-group .btn {
-  margin: 1px;
+  margin: 0;
 }
 
 .input-group--darker .icon {
@@ -389,28 +395,6 @@ a {
     padding: 5rem 10rem;
   }
 }
-
-/* .block__heading {
-  margin-top: 0;
-}
-
-.block--primary {
-  background: var(--color-primary);
-  color: var(--color-text-alternative);
-}
-
-.block--primary .block__heading {
-  color: var(--color-text-alternative);
-}
-
-.block--secondary {
-  background: var(--color-secondary);
-  color: var(--color-text-alternative);
-}
-
-.block--secondary .block__heading {
-  color: var(--color-text-alternative);
-} */
 
 /* Collapsible */
 
@@ -953,4 +937,74 @@ a {
 
 .testimonial .branch-right {
   z-index: 1;
+}
+
+/* Subscribe block */
+.subscribe {
+  background: #deb37e;
+  padding: 15rem 0;
+}
+
+.subscribe.feature {
+  overflow: visible;
+}
+
+.subscribe__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.subscribe__heading {
+  margin-top: 0;
+  font-size: 4.5rem;
+  color: var(--color-text-alternative);
+}
+
+.subscribe__description {
+  font-size: 2rem;
+  margin-bottom: 5rem;
+  opacity: 0.6;
+}
+
+.subscribe__content .input-group {
+  width: 100%;
+  max-width: 76rem;
+}
+
+.subscribe__content .input-group .input {
+  font-size: 1.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe__heading {
+    font-size: 5rem;
+    margin-bottom: 4rem;
+  }
+
+  .subscribe__description {
+    font-size: 2.2rem;
+  }
+
+  .subscribe__content .input-group .input {
+    font-size: 2.1rem;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .subscribe__heading {
+    font-size: 6rem;
+    margin-bottom: 4rem;
+  }
+
+  .subscribe__description {
+    font-size: 2.5rem;
+  }
+
+  .subscribe__content .input-group .input {
+    font-size: 2.2rem;
+  }
 }
