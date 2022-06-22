@@ -1077,6 +1077,7 @@ a {
 .footer__media {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
 }
 
 .footer__section {
@@ -1152,4 +1153,10 @@ a {
   .footer__sections {
     grid-template-columns: 60rem repeat(auto-fit, minmax(10rem, 1fr));
   }
+}
+
+/* Validation tag */
+.validation-tag {
+  margin: 0;
+  padding-top: 1.5rem;
 }
