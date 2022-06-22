@@ -1,9 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is a hiking concept web design implementation for a hiking related website"
+    />
+    <meta property="og:title" content="Hiking is fun..." />
+    <meta
+      property="og:description"
+      content="This is a hiking concept web design implementation for a hiking related website"
+    />
+    <meta property="og:image" content="http://" />
+    <meta property="og:type" content="website" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -135,7 +146,7 @@
       </button>
       <img class="branch-left" src="./images/branch.png" alt="" />
     </section>
-    <section class="container block promo-section">
+    <div class="container block promo-section">
       <article class="grid grid--1x2 promotion-block">
         <picture>
           <source type="image/webp" srcset="./images/promo-img1.webp 1x" />
@@ -146,7 +157,7 @@
             alt="hiker's image standing on mountain"
           />
         </picture>
-        <div class="promotion promotion--secondary">
+        <header class="promotion promotion--secondary">
           <h2 class="promotion__heading">Discount up to 50% All Excursions</h2>
           <p class="promotion__description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque unde
@@ -154,7 +165,7 @@
             repellat.
           </p>
           <button class="btn btn--large btn--primary">Read More</button>
-        </div>
+        </header>
       </article>
       <article class="grid grid--1x2 promotion-block">
         <picture>
@@ -166,7 +177,7 @@
             alt="hiker's image standing on mountain"
           />
         </picture>
-        <div class="promotion promotion--primary">
+        <header class="promotion promotion--primary">
           <h2 class="promotion__heading">January's Promo: Buy 1 Get 1 Free!</h2>
           <p class="promotion__description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque unde
@@ -174,9 +185,9 @@
             repellat.
           </p>
           <button class="btn btn--large btn--primary">Read More</button>
-        </div>
+        </header>
       </article>
-    </section>
+    </div>
     <section class="branch shape feature">
       <div class="container feature__content">
         <h2 class="feature__heading">Hiking in the mountains</h2>
@@ -271,33 +282,33 @@
     <footer class="footer">
       <div class="container grid footer__sections">
         <section class="collapsible collapsible--expanded footer__section">
-          <header class="collapsible__header">
+          <div class="collapsible__header">
             <h3 class="collapsible__heading">About</h3>
             <div class="icon-container icon-container--secondary">
               <svg class="icon icon--small collapsible__chevron">
                 <use xlink:href="../images/sprite.svg#chevron"></use>
               </svg>
             </div>
-          </header>
+          </div>
           <div class="collapsible__content">
             <ul class="list">
               <li><a href="#"> History</a></li>
               <li><a href="#">Our Team</a></li>
               <li><a href="#">Brand Guidelines</a></li>
               <li><a href="#">Terms & Conditions</a></li>
-              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="http://www.freepik.com">Designed by Freepik</a></li>
             </ul>
           </div>
         </section>
         <section class="collapsible footer__section">
-          <header class="collapsible__header">
+          <div class="collapsible__header">
             <h3 class="collapsible__heading">Services</h3>
             <div class="icon-container icon-container--secondary">
               <svg class="icon icon--small collapsible__chevron">
                 <use xlink:href="../images/sprite.svg#chevron"></use>
               </svg>
             </div>
-          </header>
+          </div>
           <div class="collapsible__content">
             <ul class="list">
               <li><a href="#">How to Order</a></li>
@@ -309,14 +320,14 @@
           </div>
         </section>
         <section class="collapsible footer__section">
-          <header class="collapsible__header">
+          <div class="collapsible__header">
             <h3 class="collapsible__heading">Other</h3>
             <div class="icon-container icon-container--secondary">
               <svg class="icon icon--small collapsible__chevron">
                 <use xlink:href="../images/sprite.svg#chevron"></use>
               </svg>
             </div>
-          </header>
+          </div>
           <div class="collapsible__content">
             <ul class="list">
               <li><a href="#">Contact Us</a></li>
