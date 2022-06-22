@@ -11,9 +11,263 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <title>Hiking is fun</title>
   </head>
   <body>
+    <header>
+      <nav class="nav">
+        <div class="nav__logo-container">
+          <a href="/"
+            ><img class="nav__logo" src="./images/logo.png" alt=""
+          /></a>
+        </div>
+        <div class="input-group input-group--darker nav__input-group">
+          <input type="text" class="input input--smaller input--darker" />
+          <svg class="icon icon--small icon--secondary">
+            <use xlink:href="../images/sprite.svg#search"></use>
+          </svg>
+        </div>
+        <div class="nav__menu-icon nav__toggler collapsible">
+          <svg class="icon">
+            <use xlink:href="../images/sprite.svg#menu"></use>
+          </svg>
+        </div>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="#">Home</a></li>
+          <li class="nav__item"><a href="#">Menu</a></li>
+          <li class="nav__item"><a href="#">Our Story</a></li>
+          <li class="nav__item"><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero shape">
+      <div class="block hero__content">
+        <h1 class="block__heading hero__heading--primary">
+          It's time for Hiking
+        </h1>
+        <h3 class="hero__heading--secondary">Loremipsum dolor</h3>
+        <button class="btn btn--outline btn--small">Read More</button>
+        <p class="hero__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+          rerum impedit repellat natus accusamus, officia ut.
+        </p>
+      </div>
+      <img
+        class="shape-hero--top"
+        src="./images/heroShape_top.png"
+        alt="Image by rawpixel.com"
+      />
+      <img
+        class="shape-hero--bottom"
+        src="./images/heroShape_bottom.png"
+        alt="Image by rawpixel.com"
+      />
+    </section>
+    <section class="block branch action">
+      <header class="action__header">
+        <h2 class="action__heading">Let's Go</h2>
+        <p class="action__description">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam eum
+          soluta impedit autem architecto!
+        </p>
+      </header>
+      <div class="grid grid--1x3 action__content">
+        <div class="card card--secondary">
+          <header class="card__header">
+            <picture>
+              <source type="image/webp" srcset="images/action_img1.webp 1x" />
+              <source type="image/png" srcset="images/action_img1.png 1x" />
+              <img
+                class="card__image"
+                src="./images/action_img1.png"
+                alt="hiker's image standing on mountain"
+              />
+            </picture>
+          </header>
+          <div class="card__body">
+            <h3 class="card__heading">Lorem, ipsum.</h3>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing...
+            </p>
+          </div>
+        </div>
+        <div class="card card--secondary">
+          <header class="card__header">
+            <picture>
+              <source type="image/webp" srcset="images/action_img2.webp 1x" />
+              <source type="image/png" srcset="images/action_img2.png 1x" />
+              <img
+                class="card__image"
+                src="./images/action_img2.png"
+                alt="hiker's image standing on mountain"
+              />
+            </picture>
+          </header>
+          <div class="card__body">
+            <h3 class="card__heading">Lorem, ipsum.</h3>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing...
+            </p>
+          </div>
+        </div>
+        <div class="card card--secondary">
+          <header class="card__header">
+            <picture>
+              <source type="image/webp" srcset="images/action_img3.webp 1x" />
+              <source type="image/png" srcset="images/action_img3.png 1x" />
+              <img
+                class="card__image"
+                src="./images/action_img3.png"
+                alt="hiker's image standing on mountain"
+              />
+            </picture>
+          </header>
+          <div class="card__body">
+            <h3 class="card__heading">Lorem, ipsum.</h3>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing...
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn--secondary btn--large action__button">
+        Show More
+      </button>
+      <img class="branch-left" src="./images/branch.png" alt="" />
+    </section>
+    <section class="container block promo-section">
+      <article class="grid grid--1x2 promotion-block">
+        <picture>
+          <source type="image/webp" srcset="./images/promo-img1.webp 1x" />
+          <source type="image/jpg" srcset="./images/promo-img1.jpg 1x" />
+          <img
+            class="card__image"
+            src="./images/promo-img1.jpg"
+            alt="hiker's image standing on mountain"
+          />
+        </picture>
+        <div class="promotion promotion--secondary">
+          <h2 class="promotion__heading">Discount up to 50% All Excursions</h2>
+          <p class="promotion__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque unde
+            fuga eos similique excepturi, quam facere? Quidem cupiditate quos
+            repellat.
+          </p>
+          <button class="btn btn--large btn--primary">Read More</button>
+        </div>
+      </article>
+      <article class="grid grid--1x2 promotion-block">
+        <picture>
+          <source type="image/webp" srcset="./images/promo-img2.webp 1x" />
+          <source type="image/jpg" srcset="./images/promo-img2.jpg 1x" />
+          <img
+            class="card__image"
+            src="./images/promo-img2.jpg"
+            alt="hiker's image standing on mountain"
+          />
+        </picture>
+        <div class="promotion promotion--primary">
+          <h2 class="promotion__heading">January's Promo: Buy 1 Get 1 Free!</h2>
+          <p class="promotion__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque unde
+            fuga eos similique excepturi, quam facere? Quidem cupiditate quos
+            repellat.
+          </p>
+          <button class="btn btn--large btn--primary">Read More</button>
+        </div>
+      </article>
+    </section>
+    <section class="branch shape feature">
+      <div class="container feature__content">
+        <h2 class="feature__heading">Hiking in the mountains</h2>
+        <p class="feature__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum optio
+          veritatis, eaque ullam saepe dolores nostrum distinctio architecto
+          inventore fuga tempore, expedita quas nemo? Veniam?
+        </p>
+      </div>
+      <img
+        class="shape-feature--top"
+        src="./images/shapeFeature_top.png"
+        alt="Image by rawpixel.com"
+      />
+      <img
+        class="shape-feature--bottom"
+        src="./images/shapeFeature_bottom.png"
+        alt="Image by rawpixel.com"
+      />
+      <img class="branch-left" src="./images/branch.png" alt="" />
+    </section>
+    <section class="shape callout">
+      <div class="callout__content">
+        <h2 class="callout__heading callout__heading--primary">Explore</h2>
+        <h2 class="callout__heading callout__heading--secondary">The World</h2>
+      </div>
+      <img
+        class="shape-callout--bottom"
+        src="./images/calloutShape_bottom.png"
+        alt="Image by rawpixel.com"
+      />
+    </section>
+    <section class="block branch testimonial">
+      <div class="container testimonial__content">
+        <div class="grid grid--1x3">
+          <div class="testimonial__card">
+            <h3 class="testimonial__heading">Lorem, ipsum.</h3>
+            <p class="testimonial__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              saepe labore provident dolore cupiditate ut autem.
+            </p>
+          </div>
+          <div class="testimonial__card">
+            <h3 class="testimonial__heading">Lorem, ipsum.</h3>
+            <p class="testimonial__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              saepe labore provident dolore cupiditate ut autem.
+            </p>
+          </div>
+          <div class="testimonial__card">
+            <h3 class="testimonial__heading">Lorem, ipsum.</h3>
+            <p class="testimonial__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              saepe labore provident dolore cupiditate ut autem.
+            </p>
+          </div>
+        </div>
+        <div class="quote">
+          <p class="quote__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            iure voluptates similique libero quia esse, perferendis et quae
+            autem vero.
+          </p>
+          <p class="quote__signature">Lorem, ipsum.</p>
+        </div>
+      </div>
+      <img class="branch-right" src="./images/branch.png" alt="" />
+    </section>
+    <section class="shape subscribe">
+      <div class="container subscribe__content">
+        <h2 class="subscribe__heading">Title Here</h2>
+        <p class="subscribe__description">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit
+          numquam tempora perspiciatis possimus! Doloribus, ipsum!
+        </p>
+        <div class="input-group">
+          <input type="text" class="input" placeholder="Your email" />
+          <button class="btn btn--accent">Subscribe</button>
+        </div>
+      </div>
+      <img
+        class="shape-feature--top"
+        src="./images/shapeFeature_top.png"
+        alt="Image by rawpixel.com"
+      />
+      <img
+        class="shape-subscribe--bottom"
+        src="./images/shapeSubscribe_bottom.png"
+        alt="Image by rawpixel.com"
+      />
+    </section>
     <footer class="footer">
       <div class="container grid footer__sections">
         <section class="collapsible collapsible--expanded footer__section">
@@ -80,16 +334,16 @@
           </p>
           <div class="footer__media">
             <a class="footer__media-item" href="#">
-              <img class="bg-instagram" src="#" alt="" />
+              <div class="bg-instagram"></div>
             </a>
             <a class="footer__media-item" href="#">
-              <img class="bg-facebook" src="#" alt="" />
+              <div class="bg-facebook"></div>
             </a>
             <a class="footer__media-item" href="#">
-              <img class="bg-twitter" src="#" alt="" />
+              <div class="bg-twitter"></div>
             </a>
             <a class="footer__media-item" href="#">
-              <img class="bg-whatsapp" src="#" alt="" />
+              <div class="bg-whatsapp"></div>
             </a>
           </div>
         </div>
