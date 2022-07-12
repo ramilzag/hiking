@@ -650,6 +650,10 @@ a {
 }
 
 .hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   width: 50%;
 }
 
@@ -1082,6 +1086,7 @@ a {
 
 .footer__media {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
 }
@@ -1095,10 +1100,13 @@ a {
   padding: 1.5rem 1rem 0 0;
 }
 
+.footer .collapsible__header {
+  margin-bottom: 1rem;
+}
+
 .footer .collapsible__heading {
   color: var(--color-text-alternative);
   font-size: 2.7rem;
-  margin-bottom: 1.8rem;
 }
 
 .footer .collapsible__content li {

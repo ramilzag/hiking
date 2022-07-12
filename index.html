@@ -15,13 +15,14 @@
     />
     <meta property="og:image" content="http://" />
     <meta property="og:type" content="website" />
-    <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Hiking is fun</title>
   </head>
   <body>
@@ -52,7 +53,7 @@
       </nav>
     </header>
     <section class="hero shape">
-      <div class="block hero__content">
+      <div class="block hero__content" data-aos="fade-right">
         <h1 class="block__heading hero__heading--primary">
           It's time for Hiking
         </h1>
@@ -74,7 +75,7 @@
         alt="Image by rawpixel.com"
       />
     </section>
-    <section class="block branch action">
+    <section class="block branch action" data-aos="fade-up">
       <header class="action__header">
         <h2 class="action__heading">Let's Go</h2>
         <p class="action__description">
@@ -147,7 +148,7 @@
       <img class="branch-left" src="./images/branch.png" alt="" />
     </section>
     <div class="container block promo-section">
-      <article class="grid grid--1x2 promotion-block">
+      <article class="grid grid--1x2 promotion-block" data-aos="fade-up">
         <picture>
           <source type="image/webp" srcset="./images/promo-img1.webp 1x" />
           <source type="image/jpg" srcset="./images/promo-img1.jpg 1x" />
@@ -167,7 +168,7 @@
           <button class="btn btn--large btn--primary">Read More</button>
         </header>
       </article>
-      <article class="grid grid--1x2 promotion-block">
+      <article class="grid grid--1x2 promotion-block" data-aos="fade-up">
         <picture>
           <source type="image/webp" srcset="./images/promo-img2.webp 1x" />
           <source type="image/jpg" srcset="./images/promo-img2.jpg 1x" />
@@ -188,7 +189,7 @@
         </header>
       </article>
     </div>
-    <section class="branch shape feature">
+    <section class="branch shape feature" data-aos="fade-up">
       <div class="container feature__content">
         <h2 class="feature__heading">Hiking in the mountains</h2>
         <p class="feature__description">
@@ -210,7 +211,7 @@
       <img class="branch-left" src="./images/branch.png" alt="" />
     </section>
     <section class="shape callout">
-      <div class="callout__content">
+      <div class="callout__content" data-aos="fade-up-left">
         <h2 class="callout__heading callout__heading--primary">Explore</h2>
         <h2 class="callout__heading callout__heading--secondary">The World</h2>
       </div>
@@ -220,7 +221,7 @@
         alt="Image by rawpixel.com"
       />
     </section>
-    <section class="block branch testimonial">
+    <section class="block branch testimonial" data-aos="fade-up">
       <div class="container testimonial__content">
         <div class="grid grid--1x3">
           <div class="testimonial__card">
@@ -256,7 +257,7 @@
       </div>
       <img class="branch-right" src="./images/branch.png" alt="" />
     </section>
-    <section class="shape subscribe">
+    <section class="shape subscribe" data-aos="fade-up">
       <div class="container subscribe__content">
         <h2 class="subscribe__heading">Title Here</h2>
         <p class="subscribe__description">
@@ -336,7 +337,7 @@
             </ul>
           </div>
         </section>
-        <div class="footer__brand">
+        <div class="footer__brand" data-aos="fade-right">
           <h3 class="footer__brand-title">Title Here</h3>
           <p class="footer__brand-description">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
@@ -370,5 +371,9 @@
       </div>
     </footer>
     <script src="./js/collapsible.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
