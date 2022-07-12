@@ -167,6 +167,11 @@ a {
   font-weight: bold;
   text-transform: uppercase;
   white-space: nowrap;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.03);
 }
 
 .btn--large {
@@ -727,6 +732,7 @@ a {
 .action__button {
   font-size: 1.4rem;
   letter-spacing: 4px;
+  z-index: 2;
 }
 
 .action .branch-left {
