@@ -213,7 +213,7 @@ a {
   background: #fefefd;
   color: var(--color-secondary);
   box-shadow: 0 0 3px #d9d7d4;
-  font-weight: 900;
+  font-weight: 800;
 }
 
 .btn--outline:hover {
@@ -458,7 +458,7 @@ a {
 }
 
 .quote__signature {
-  font-weight: 800;
+  font-weight: bolder;
   color: #3f3f3f;
 }
 
@@ -660,7 +660,7 @@ a {
 .hero__heading--primary {
   font-size: 5vmax;
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 800;
   color: var(--color-primary);
   text-shadow: 3px -3px 5px rgba(0, 0, 0, 0.1);
   margin-bottom: 1vw;
@@ -678,7 +678,7 @@ a {
 
 .hero__description {
   font-size: 1.6vmax;
-  font-weight: 600;
+  font-weight: 700;
   opacity: 0.7;
   margin-bottom: 1vmax;
   color: #54524f;
@@ -717,7 +717,7 @@ a {
   color: var(--color-primary);
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-weight: 900;
+  font-weight: 800;
   font-size: 4rem;
 }
 
@@ -914,7 +914,7 @@ a {
 
 .callout__heading {
   text-shadow: 2px -2px 2px rgba(0, 0, 0, 0.25);
-  font-weight: 900;
+  font-weight: 800;
   font-style: italic;
   text-transform: uppercase;
   padding-right: 6vw;
