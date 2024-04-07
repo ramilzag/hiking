@@ -906,7 +906,7 @@ a {
 }
 
 .callout__content {
-  width: 50%;
+  /* width: 50%; */
   text-align: right;
 }
 
@@ -929,7 +929,7 @@ a {
   color: #54524f;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   .callout__heading {
     font-size: 4vmax;
   }
@@ -1129,7 +1129,7 @@ a {
   color: #fff;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
   .footer__sections {
     grid-template-columns: 40rem repeat(auto-fit, minmax(10rem, 1fr));
   }
